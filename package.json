@@ -1,0 +1,16 @@
+{
+    "name": "whatsapp-clone",
+    "version": "1.0.0",
+    "description": "A WhatsApp clone application",
+    "scripts": {
+      "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+      "start:backend": "cd backend && npm run dev",
+      "start:frontend": "cd frontend && npm start",
+      "install": "concurrently \"cd backend && npm install\" \"cd frontend && npm install\""
+    },
+    "author": "Ramindu Dulmin Jayasinghe",
+    "license": "ISC",
+    "devDependencies": {
+      "concurrently": "^6.2.0"
+    }
+  }
